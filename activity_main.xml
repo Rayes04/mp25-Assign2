@@ -1,50 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="24dp">
 
-    <!-- Input Jarak -->
     <EditText
-        android:id="@+id/inputJarak"
+        android:id="@+id/inputPanjang"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Masukkan jarak (km)"
-        android:inputType="numberDecimal"
-        android:minHeight="48dp"
-        android:padding="12dp"/>
+        android:hint="Masukkan Panjang"
+        android:inputType="numberDecimal"/>
 
-    <!-- Input Kecepatan -->
     <EditText
-        android:id="@+id/inputKecepatan"
+        android:id="@+id/inputLebar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Masukkan kecepatan (km/jam)"
-        android:inputType="numberDecimal"
-        android:minHeight="48dp"
-        android:padding="12dp"
-        android:layout_marginTop="8dp"/>
+        android:hint="Masukkan Lebar"
+        android:inputType="numberDecimal"/>
 
-    <!-- Tombol untuk menghitung waktu tempuh -->
     <Button
         android:id="@+id/btnHitung"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="HITUNG WAKTU"
-        android:backgroundTint="#8000FF"
-        android:textColor="#FFFFFF"
+        android:text="Hitung Luas" />
+
+    <TextView
+        android:id="@+id/txtHasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Luas:"
+        android:textSize="18sp"
         android:layout_marginTop="16dp"/>
 
-    <!-- Hasil perhitungan waktu tempuh -->
-    <TextView
-        android:id="@+id/textResult"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Waktu tempuh akan muncul di sini"
-        android:textSize="18sp"
-        android:textColor="#000000"
-        android:gravity="center"
-        android:layout_marginTop="16dp"/>
 </LinearLayout>
